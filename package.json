@@ -1,0 +1,26 @@
+{
+  "name": "taller-api-built-in",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "debug": "npx nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node",
+    "built-in",
+    "API"
+  ],
+  "author": "Cristian Andrés Fajardo",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-middleware": "^3.4.2",
+    "joi": "^17.11.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

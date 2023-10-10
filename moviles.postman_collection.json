@@ -1,0 +1,127 @@
+{
+	"info": {
+		"_postman_id": "191df8e5-4f64-4d75-be0f-b82974df24f4",
+		"name": "moviles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "30105821"
+	},
+	"item": [
+		{
+			"name": "Crear Moviles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"Sony\",\r\n  \"modelo\": \"Xperia 1 III\",\r\n  \"numeroDeSerie\": \"STU789VWX\",\r\n  \"sistemaOperativo\": \"Android 11\",\r\n  \"fechaLanzamiento\": \"2021-08-26T00:00:00Z\",\r\n  \"almacenamientoInternoGB\": 256,\r\n  \"camaraPrincipalMP\": 12,\r\n  \"conectividad\": [\"5G\", \"Wi-Fi 6\"]\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/moviles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moviles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Moviles",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/moviles/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moviles",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar Moviles",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"marca\": \"samsung\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/moviles/8c38203a-6a5b-49eb-abf4-fe52583ee228",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moviles",
+						"8c38203a-6a5b-49eb-abf4-fe52583ee228"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener Movil por Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/moviles/8c38203a-6a5b-49eb-abf4-fe52583ee228",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moviles",
+						"8c38203a-6a5b-49eb-abf4-fe52583ee228"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/moviles/b4b5eacd-ec4d-40b3-841d-6c2acaf3cf4b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"moviles",
+						"b4b5eacd-ec4d-40b3-841d-6c2acaf3cf4b"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
